@@ -105,6 +105,10 @@ public class Carro {
         this.dataEncerramento = dataEncerramento;
     }
 
+    public boolean estaEncerrado() {
+        return LocalDateTime.now().isAfter(dataEncerramento);
+    }
+
 
     
 
