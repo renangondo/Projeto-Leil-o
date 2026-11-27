@@ -16,7 +16,7 @@ public class Usuario {
     private Long id;
 
     @Column(nullable = false, length=100)
-    private String name;
+    private String nome;
 
     @Column(nullable=false, unique=true, length=100)
     private String email;
@@ -34,12 +34,12 @@ public class Usuario {
         this.id = id;
     }
     ///////////////////////////////
-    public String getName() {
-        return name;
+    public String getNome() {
+        return nome;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(String nome) {
+        this.nome = nome;
     }
     ///////////////////////////////
     public String getEmail() {
